@@ -1,6 +1,6 @@
 # vue-play
 
-This project is meant to be a playground for Vue 3 + Vite.
+This project is meant to be a playground for [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev).
 
 ## Init
 
@@ -8,7 +8,7 @@ I chose **No** for every option to have a vanilla environment:
 
 ```sh
 $ npm create vue@latest
-
+(...)
 ✔ Project name: … vue-play
 ✔ Add TypeScript? … No / Yes
 ✔ Add JSX Support? … No / Yes
@@ -17,6 +17,17 @@ $ npm create vue@latest
 ✔ Add Vitest for Unit Testing? … No / Yes
 ✔ Add an End-to-End Testing Solution? › No
 ✔ Add ESLint for code quality? … No / Yes
+(...)
+```
+
+I'm using the following **npm/node** versions:
+
+```sh
+$ npm version
+(...)
+  npm: '10.2.4',
+  node: '21.5.0',
+(...)
 ```
 
 ## Setup
@@ -66,6 +77,26 @@ $ vite build
 
 ```sh
 $ npm run build
+```
+
+This is the result of a **vite build** execution within **vue-play** project folder:
+
+```sh
+$ rm -rf dist
+
+$ vite build
+vite v5.0.12 building for production...
+✓ 23 modules transformed.
+dist/index.html                  0.43 kB │ gzip:  0.28 kB
+dist/assets/index-WjEyzLJD.css   3.71 kB │ gzip:  1.19 kB
+dist/assets/index-avtuWnnn.js   63.15 kB │ gzip: 25.00 kB
+✓ built in 1.19s
+
+$ find dist/ -type f -printf '%h/%f: %s bytes\n' | sort
+dist/assets/index-avtuWnnn.js: 63158 bytes
+dist/assets/index-WjEyzLJD.css: 3706 bytes
+dist/favicon.ico: 4286 bytes
+dist/index.html: 430 bytes
 ```
 
 ## Links
