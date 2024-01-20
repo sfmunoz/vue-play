@@ -111,3 +111,11 @@ dist/index.html: 430 bytes
 * [https://vitejs.dev](Vite):
   * **[Vite Configuration](https://vitejs.dev/config/)** → customize project config
   * [Vite guide](https://vitejs.dev/guide/)
+
+Links rendered by the project itself are useful:
+
+* **Documentation**: Vue’s [official documentation](https://vuejs.org/) provides you with all information you need to get started.
+* **Tooling**: This project is served and bundled with [Vite](https://vitejs.dev/guide/features.html). The recommended IDE setup is [VSCode](https://code.visualstudio.com/) + [Volar](https://github.com/johnsoncodehk/volar). If you need to test your components and web pages, check out [Cypress](https://www.cypress.io/) and [Cypress Component Testing](https://on.cypress.io/component). More instructions are available in README.md.
+* **Ecosystem**: Get official tools and libraries for your project: [Pinia](https://pinia.vuejs.org/), [Vue Router](https://router.vuejs.org/), [Vue Test Utils](https://test-utils.vuejs.org/), and [Vue Dev Tools](https://github.com/vuejs/devtools). If you need more resources, we suggest paying [Awesome Vue](https://github.com/vuejs/awesome-vue) a visit.
+* **Community**: Got stuck? Ask your question on [Vue Land](https://chat.vuejs.org/), our official Discord server, or [StackOverflow](https://stackoverflow.com/questions/tagged/vue.js). You should also subscribe to [our mailing list](https://news.vuejs.org/) and follow the official [@vuejs](https://twitter.com/vuejs) twitter account for latest news in the Vue world.
+* **Support Vue**: As an independent project, Vue relies on community backing for its sustainability. You can help us by [becoming a sponsor](https://vuejs.org/sponsor/).
