@@ -2,7 +2,7 @@
 
 This project is meant to be a playground for Vue 3 + Vite.
 
-## Project setup
+## Init
 
 I chose **No** for every option to have a vanilla environment:
 
@@ -19,22 +19,10 @@ $ npm create vue@latest
 ✔ Add ESLint for code quality? … No / Yes
 ```
 
-## IDE setup
-
-I'm using the recommended tooling on ([https://vuejs.org/guide/quick-start.html](https://vuejs.org/guide/quick-start.html):
-
-* [VSCode](https://code.visualstudio.com/)
-* [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) → don't use Vetur
-* [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project setup
+## Setup
 
 ```sh
-npm install
+$ npm install
 ```
 
 ## Management
@@ -42,29 +30,53 @@ npm install
 Tweak **PATH** to use **vite** command:
 
 ```sh
-export PATH=`pwd`/node_modules/.bin:$PATH
+$ export PATH=`pwd`/node_modules/.bin:$PATH
+```
+
+Useful commands can be figured out using **package.json** details:
+
+```sh
+$ jq .scripts < package.json
+{
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
 ```
 
 ### Compile and hot-reload for development
 
 ```sh
-vite
+$ vite
 ```
 
-**npm** based alternative*:
+**npm** based alternative:
 
 ```sh
-npm run dev
+$ npm run dev
 ```
 
 ### Compile and minify for production
 
 ```sh
-vite build
+$ vite build
 ```
 
-**npm** based alternative*:
+**npm** based alternative:
 
 ```sh
-npm run build
+$ npm run build
 ```
+
+## Links
+
+* IDE setup ([https://vuejs.org/guide/quick-start.html](https://vuejs.org/guide/quick-start.html) recommended tooling):
+  * [VSCode](https://code.visualstudio.com/)
+  * [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) → Vetur shouldn't be used
+  * [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+* [Vue.js](https://vuejs.org/):
+  * [Vue.js Introduction](https://vuejs.org/guide/introduction.html)
+  * [Vue.js Quick Start](https://vuejs.org/guide/quick-start)
+* [https://vitejs.dev](Vite):
+  * **[Vite Configuration](https://vitejs.dev/config/)** → customize project config
+  * [Vite guide](https://vitejs.dev/guide/)
